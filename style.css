@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Permanent Marker', cursive;
+	
+}
+
+header{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background: #da0018;
+	padding: 100px;
+	
+}
+
+#mario_animation{
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	border-radius: 50%;
+	background-image: url(images/m.jpg);
+	box-shadow: 0 0 0 5px #76000d, 0 0 0 10px #ffffff;
+	transition: border-radius 1s linear, box-shadow 1s 1s linear, transform 1s 2s linear, background-image 1s 3s linear;
+	
+
+}
+
+
+header:hover #mario_animation{
+	border-radius: 0;
+	box-shadow: 0 0 0 10px #fc0017, 0 0 0 20px #003f9f;
+	transform: scale(1.1) rotate(45deg);
+	background-image: url(images/mario1.jpg);
+}
+
+
+#text_animation{
+	text-shadow: 2px 2px 0 #4A0008, -2px -2px 0 #4A0008;
+	font-size: 80pt;
+	color: white;
+	display: flex;
+	
+	
+}
+
+.M{
+	transform-origin: 0% 100% 0px;
+	transition: transform 1s 3s linear;
+}
+
+header:hover .M{
+	transform: scale(0.8,0.8) rotate(-45deg);
+}
+
+.A{
+	transition: transform 1s 3s ease-in-out;
+	
+}
+
+header:hover .A{
+	transform: scale(1,2.3) skewX(45deg);
+	
+}
+
+.R{
+	transition: transform 1s 3s ease-in-out;
+	
+}
+
+header:hover .R{
+	transform: rotateY(600deg);
+ }
+
+.I{
+	transform-origin: bottom center;
+	transition: transform 1s 3s ease-in-out;
+}
+
+header:hover .I{
+	transform: scale(0.1,0.1);
+}
+
+
+.O{
+	transition: transform 1s 3s ease-in;
+}
+
+header:hover .O{
+	transform: scale(2,0.5) translateY(-150px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+            
+            
